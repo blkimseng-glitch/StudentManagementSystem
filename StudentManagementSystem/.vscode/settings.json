@@ -1,0 +1,10 @@
+{
+  "cmake.sourceDirectory": "C:/Users/pseak/Documents/StudentManagementSystem",
+  "cmake.configureArgs": [
+    "-DCMAKE_TOOLCHAIN_FILE=C:/Users/pseak/Documents/vcpkg/scripts/buildsystems/vcpkg.cmake",
+    "-A", "x64"
+  ],
+  "cmake.buildDirectory": "${workspaceFolder}/build",
+  "cmake.buildType": "Release",
+  "cmake.generator": "Visual Studio 18 2026"
+}

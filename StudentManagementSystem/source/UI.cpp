@@ -4,3 +4,5 @@
 #include <tabulate/table.hpp>
 #include "Student.hpp"
 
+
+void displayPagination(const vector<Student>& list);

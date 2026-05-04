@@ -6,29 +6,27 @@
 
 using namespace std;
 
- struct Student
-    {
-        string name,gender;
-        int id;
-        float average;
-    };
-    
+void addStudent(vector<Student>& students)
+{
+    string name, gender;
+    int ID;
+    float average;
 
-void addStudent(vector<Student>& students){Student newStudent;
-    cout<< "Enter student Name: ";
+    cout << "Enter student Name: ";
+    getline(cin,name);
+
+    cout << "Enter student Gender: ";
+    cin >> gender;
+
+    cout << "Enter student ID: ";
+    cin >> ID;
     cin.ignore();
-    getline(cin,newStudent.name);
-
-    cout<< "Enter student Gender: ";
-    cin>>newStudent.gender;
     
-    cout<< "Enter student ID: ";
-    cin >> newStudent.id;
+     cout << "Enter student Average: ";
+     cin >> average;
 
-    cout<< "Enter student Average: ";
-    cin >>newStudent.average;
-
-    students.push_back(newStudent);
-    cout<< "Student added successfully.\n";
-
+    students.push_back(Student(ID, name, gender, average));
+    cout << "Student added successfully.\n";
 }
+
+

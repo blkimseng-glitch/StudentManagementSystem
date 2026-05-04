@@ -4,6 +4,7 @@
 #include <sstream>
 #include <vector>
 #include <string>
+#include <xlnt/xlnt.hpp>
 
 using namespace xlnt;
 using namespace std;

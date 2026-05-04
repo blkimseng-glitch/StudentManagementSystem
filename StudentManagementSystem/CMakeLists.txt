@@ -71,13 +71,33 @@
 #     )
 # endif()
 
+# 
+
+
 cmake_minimum_required(VERSION 3.14)
 project(StudentManagementSystem)
 
 set(CMAKE_CXX_STANDARD 17)
 
-find_package(xlnt CONFIG REQUIRED)
-find_package(tabulate CONFIG REQUIRED)
+include(FetchContent)
+
+# 1. Fetch xlnt
+FetchContent_Declare(
+  xlnt
+  GIT_REPOSITORY https://github.com/tfussell/xlnt.git
+  GIT_TAG main
+)
+FetchContent_MakeAvailable(xlnt)
+
+# 2. Fetch tabulate
+FetchContent_Declare(
+  tabulate
+  GIT_REPOSITORY https://github.com/p-ranav/tabulate.git
+  GIT_TAG main
+)
+FetchContent_MakeAvailable(tabulate)
+
+
 
 add_executable(StudentManagementSystem
     main.cpp
@@ -88,12 +108,13 @@ add_executable(StudentManagementSystem
 )
 
 target_include_directories(StudentManagementSystem PRIVATE include)
-target_link_libraries(StudentManagementSystem PRIVATE xlnt::xlnt tabulate::tabulate)
+
+target_link_libraries(StudentManagementSystem PRIVATE xlnt tabulate)
 
 if(WIN32)
     add_custom_command(TARGET StudentManagementSystem POST_BUILD
         COMMAND ${CMAKE_COMMAND} -E copy_if_different
-            $<TARGET_FILE:xlnt::xlnt>
+            $<TARGET_FILE:xlnt>
             $<TARGET_FILE_DIR:StudentManagementSystem>
     )
 endif()

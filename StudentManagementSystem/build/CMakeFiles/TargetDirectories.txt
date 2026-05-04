@@ -1,3 +1,0 @@
-C:/Users/pseak/Documents/SMSytem/StudentManagementSystem/build/CMakeFiles/StudentManagementSystem.dir
-C:/Users/pseak/Documents/SMSytem/StudentManagementSystem/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/pseak/Documents/SMSytem/StudentManagementSystem/build/CMakeFiles/ZERO_CHECK.dir

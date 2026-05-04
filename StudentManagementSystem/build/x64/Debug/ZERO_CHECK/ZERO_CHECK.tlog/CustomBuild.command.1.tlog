@@ -1,0 +1,10 @@
+^C:\USERS\PSEAK\DOCUMENTS\SMSYTEM\STUDENTMANAGEMENTSYSTEM\BUILD\CMAKEFILES\922018A780E8FCCD0B99081D48E3289D\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/pseak/Documents/StudentManagementSystem -BC:/Users/pseak/Documents/SMSytem/StudentManagementSystem/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/pseak/Documents/SMSytem/StudentManagementSystem/build/StudentManagementSystem.slnx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

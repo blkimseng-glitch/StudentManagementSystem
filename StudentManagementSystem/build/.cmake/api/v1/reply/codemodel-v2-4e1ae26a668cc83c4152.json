@@ -1,0 +1,516 @@
+{
+	"configurations" : 
+	[
+		{
+			"abstractTargets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "FastFloat::fast_float::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-FastFloat__fast_float-Debug-3ce31c0a153a07aba789.json",
+					"name" : "FastFloat::fast_float",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fmt::fmt::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fmt__fmt-Debug-f897aba5f25d05e10627.json",
+					"name" : "fmt::fmt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fmt::fmt-header-only::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fmt__fmt-header-only-Debug-e305599b34e0712714d3.json",
+					"name" : "fmt::fmt-header-only",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tabulate::tabulate::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tabulate__tabulate-Debug-fcfcb80bd2fec4517477.json",
+					"name" : "tabulate::tabulate",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "utf8cpp::utf8cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-utf8cpp__utf8cpp-Debug-b8d57f87b5510fe2c8e4.json",
+					"name" : "utf8cpp::utf8cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "xlnt::xlnt::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-xlnt__xlnt-Debug-7a9218fef356c8e9fac2.json",
+					"name" : "xlnt::xlnt",
+					"projectIndex" : 0
+				}
+			],
+			"directories" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					],
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f040eec181a89de70dbe.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "StudentManagementSystem",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Debug-0c41ce475df22038093f.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "StudentManagementSystem::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-StudentManagementSystem-Debug-605da4491e2647376553.json",
+					"name" : "StudentManagementSystem",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Debug-36ee328db771316cef4b.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"abstractTargets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "FastFloat::fast_float::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-FastFloat__fast_float-Release-3ce31c0a153a07aba789.json",
+					"name" : "FastFloat::fast_float",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fmt::fmt::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fmt__fmt-Release-042973890c64aaf4b006.json",
+					"name" : "fmt::fmt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fmt::fmt-header-only::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fmt__fmt-header-only-Release-e305599b34e0712714d3.json",
+					"name" : "fmt::fmt-header-only",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tabulate::tabulate::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tabulate__tabulate-Release-fcfcb80bd2fec4517477.json",
+					"name" : "tabulate::tabulate",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "utf8cpp::utf8cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-utf8cpp__utf8cpp-Release-b8d57f87b5510fe2c8e4.json",
+					"name" : "utf8cpp::utf8cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "xlnt::xlnt::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-xlnt__xlnt-Release-e519bcc707dc631c6845.json",
+					"name" : "xlnt::xlnt",
+					"projectIndex" : 0
+				}
+			],
+			"directories" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					],
+					"build" : ".",
+					"jsonFile" : "directory-.-Release-f040eec181a89de70dbe.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "StudentManagementSystem",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Release-0c41ce475df22038093f.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "StudentManagementSystem::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-StudentManagementSystem-Release-19ed47813b93034bb3c9.json",
+					"name" : "StudentManagementSystem",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Release-36ee328db771316cef4b.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"abstractTargets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "FastFloat::fast_float::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-FastFloat__fast_float-MinSizeRel-3ce31c0a153a07aba789.json",
+					"name" : "FastFloat::fast_float",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fmt::fmt::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fmt__fmt-MinSizeRel-042973890c64aaf4b006.json",
+					"name" : "fmt::fmt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fmt::fmt-header-only::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fmt__fmt-header-only-MinSizeRel-e305599b34e0712714d3.json",
+					"name" : "fmt::fmt-header-only",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tabulate::tabulate::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tabulate__tabulate-MinSizeRel-fcfcb80bd2fec4517477.json",
+					"name" : "tabulate::tabulate",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "utf8cpp::utf8cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-utf8cpp__utf8cpp-MinSizeRel-b8d57f87b5510fe2c8e4.json",
+					"name" : "utf8cpp::utf8cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "xlnt::xlnt::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-xlnt__xlnt-MinSizeRel-e519bcc707dc631c6845.json",
+					"name" : "xlnt::xlnt",
+					"projectIndex" : 0
+				}
+			],
+			"directories" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					],
+					"build" : ".",
+					"jsonFile" : "directory-.-MinSizeRel-f040eec181a89de70dbe.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "MinSizeRel",
+			"projects" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "StudentManagementSystem",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-0c41ce475df22038093f.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "StudentManagementSystem::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-StudentManagementSystem-MinSizeRel-1973f91a86dc81bd05ae.json",
+					"name" : "StudentManagementSystem",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-MinSizeRel-36ee328db771316cef4b.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"abstractTargets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "FastFloat::fast_float::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-FastFloat__fast_float-RelWithDebInfo-3ce31c0a153a07aba789.json",
+					"name" : "FastFloat::fast_float",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fmt::fmt::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fmt__fmt-RelWithDebInfo-042973890c64aaf4b006.json",
+					"name" : "fmt::fmt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fmt::fmt-header-only::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fmt__fmt-header-only-RelWithDebInfo-e305599b34e0712714d3.json",
+					"name" : "fmt::fmt-header-only",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tabulate::tabulate::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tabulate__tabulate-RelWithDebInfo-fcfcb80bd2fec4517477.json",
+					"name" : "tabulate::tabulate",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "utf8cpp::utf8cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-utf8cpp__utf8cpp-RelWithDebInfo-b8d57f87b5510fe2c8e4.json",
+					"name" : "utf8cpp::utf8cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "xlnt::xlnt::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-xlnt__xlnt-RelWithDebInfo-e519bcc707dc631c6845.json",
+					"name" : "xlnt::xlnt",
+					"projectIndex" : 0
+				}
+			],
+			"directories" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					],
+					"build" : ".",
+					"jsonFile" : "directory-.-RelWithDebInfo-f040eec181a89de70dbe.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "StudentManagementSystem",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-0c41ce475df22038093f.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "StudentManagementSystem::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-StudentManagementSystem-RelWithDebInfo-962c74d7a881f58848b5.json",
+					"name" : "StudentManagementSystem",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-RelWithDebInfo-36ee328db771316cef4b.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/pseak/Documents/SMSytem/StudentManagementSystem/build",
+		"source" : "C:/Users/pseak/Documents/StudentManagementSystem"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	}
+}

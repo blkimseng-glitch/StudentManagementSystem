@@ -6,4 +6,6 @@
 
 using namespace std;
 
-
+void addStudent(vector<Student>& students){
+    
+}

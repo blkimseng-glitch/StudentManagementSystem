@@ -24,19 +24,23 @@ int main()
     {
         cout << "\n==========================================" << endl;
         cout << "   STUDENT MANAGEMENT SYSTEM (GROUP 1)    " << endl;
-        cout << "   Logged in as: " << (currentRole == UserRole::Admin ? "ADMIN" : "USER") << endl;
+        cout << "   Logged in as: " << (currentRole == UserRole::Admin ? "ADMIN" : "Teacher" : "Student") << endl;
         cout << "==========================================" << endl;
-        cout << "1. Display All Students (Tabular)    ]" << endl;
-        cout << "2. Search Student (By ID)            " << endl;
-        cout << "3. Sort Students (By Average)        " << endl;
-        cout << "4. Pagination View (Bonus)           " << endl;
-
+        cout << "1. Search Student (By ID)            " << endl;
+        if (currentRole == UserRole::Teacher)
+        {
+            cout << "---------------- TEACHER MENU --------------" << endl;
+            cout << "2. Display All Students (Tabular)    ]" << endl;
+            cout << "3. Search Student (By ID)            " << endl;
+            cout << "4. Sort Students (By Average)        " << endl;
+            cout << "5. Pagination View (Bonus)           " << endl;
+        }
         if (currentRole == UserRole::Admin)
         {
             cout << "---------------- ADMIN MENU --------------" << endl;
-            cout << "5. Add New Student                   " << endl;
-            cout << "6. Delete Student                    " << endl;
-            cout << "7. Save Data to Excel/CSV            " << endl;
+            cout << "6. Add New Student                   " << endl;
+            cout << "7. Delete Student                    " << endl;
+            cout << "8. Save Data to Excel/CSV            " << endl;
         }
 
         cout << "0. Exit" << endl;

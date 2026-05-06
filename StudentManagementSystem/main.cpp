@@ -1,8 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include <tabulate/table.hpp>
-#include <xlnt/xlnt.hpp>
 #include "Student.hpp"
 #include "UserManager.hpp"
 

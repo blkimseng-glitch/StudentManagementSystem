@@ -1,9 +1,13 @@
+
 #include <iostream>
 #include <vector>
 #include <string>
 #include <iomanip>
 #include "Student.hpp" 
+<<<<<<< HEAD
 #include <tabulate/table.hpp>
+=======
+>>>>>>> 74e429e769fd0c30e256e45768ee39e1cf803ae7
 
 using namespace std;
 
@@ -66,7 +70,11 @@ void displayPagination(const vector<Student>& list) {
 
     int pageSize = 5; 
     int totalStudents = list.size();
+<<<<<<< HEAD
     int totalPages = (totalStudents + pjmageSize - 1) / pageSize; 
+=======
+    int totalPages = (totalStudents + pageSize - 1) / pageSize; 
+>>>>>>> 74e429e769fd0c30e256e45768ee39e1cf803ae7
     int currentPage = 0;
 
     TableRenderer renderer;

@@ -23,23 +23,23 @@ int main()
     do
     {
         cout << "\n==========================================" << endl;
-        cout << "   STUDENT MANAGEMENT SYSTEM (GROUP 1)    " << endl;
+        cout << "   STUDENT MANAGEMENT SYSTEM     " << endl;
         cout << "   Logged in as: " << (currentRole == UserRole::Admin ? "ADMIN" : "USER") << endl;
         cout << "==========================================" << endl;
-        cout << "1. Display All Students (Tabular)    ]" << endl;
-        cout << "2. Search Student (By ID)            " << endl;
-        cout << "3. Sort Students (By Average)        " << endl;
-        cout << "4. Pagination View (Bonus)           " << endl;
+        cout << "1. Display All Students     " << endl;
+        cout << "2. Search Student             " << endl;
+        cout << "3. Sort Students        " << endl;
+        cout << "4. Pagination View           " << endl;
 
         if (currentRole == UserRole::Admin)
         {
             cout << "---------------- ADMIN MENU --------------" << endl;
             cout << "5. Add New Student                   " << endl;
             cout << "6. Delete Student                    " << endl;
-            cout << "7. Save Data to Excel/CSV            " << endl;
+            cout << "7. Save Data to Excel           " << endl;
         }
 
-        cout << "0. Exit" << endl;
+        cout << "8. Exit" << endl;
         cout << "------------------------------------------" << endl;
         cout << "Select option: ";
         cin >> choice;

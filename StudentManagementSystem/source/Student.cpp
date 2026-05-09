@@ -19,8 +19,21 @@ void addStudent(vector<Student> &students)
     cout << "Enter student Name: ";
     getline(cin, name);
 
-    cout << "Enter student Gender: ";
-    cin >> gender;
+    do
+    {
+        cout << "Enter student Gender (M/F): ";
+        cin >> gender;
+
+           if (gender == "m")
+            gender = "M";
+        if (gender == "f")
+            gender = "F";
+
+        if (gender != "M" && gender != "F")
+        {
+            cout << "\033[31m[!] Invalid input! Please enter 'M' for Male or 'F' for Female.\033[0m" << endl;
+        }
+    } while (gender != "M" && gender != "F");
 
     cout << "Enter student Average: ";
     cin >> average;
@@ -56,26 +69,6 @@ void searchStudent(const vector<Student> &list)
     }
 }
 
-void sortStudents(vector<Student> &list)
-{
-    sort(list.begin(), list.end(), [](const Student &a, const Student &b)
-         {
-             return a.getAverage() > b.getAverage(); // Sort in descending order
-         });
-
-    cout << "Students sorted by average grade:" << endl;
-    cout << left << setw(10) << "ID"
-         << left << setw(20) << "Name"
-         << left << setw(10) << "Gender"
-         << left << setw(10) << "Average" << endl;
-    for (const auto &student : list)
-    {
-        cout << left << setw(10) << student.getId()
-             << left << setw(20) << student.getName()
-             << left << setw(10) << student.getGender()
-             << left << setw(10) << student.getAverage() << endl;
-    }
-}
 
 void deleteStudent(vector<Student> &list)
 {

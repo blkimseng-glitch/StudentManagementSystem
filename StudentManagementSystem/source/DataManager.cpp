@@ -17,7 +17,7 @@ void saveToExcel(const vector<Student> &list)
     ifstream file("SaveToExcel.xlsx");
     if (file.good())
     {
-        wb.load("SaveToExcel.xlsx"); 
+        wb.load("SaveToExcel.xlsx");
         ws = wb.active_sheet();
     }
     else
@@ -30,18 +30,18 @@ void saveToExcel(const vector<Student> &list)
         ws.cell("B1").value("Name");
         ws.cell("C1").value("Gender");
         ws.cell("D1").value("Average");
+        ws.cell("E1").value("Grade");
     }
-
 
     int row = ws.highest_row() + 1;
 
-   
     for (auto student : list)
     {
         ws.cell("A" + to_string(row)).value(student.getId());
         ws.cell("B" + to_string(row)).value(student.getName());
         ws.cell("C" + to_string(row)).value(student.getGender());
         ws.cell("D" + to_string(row)).value(student.getAverage());
+        ws.cell("E" + to_string(row)).value(student.getGrade());
         row++;
     }
 

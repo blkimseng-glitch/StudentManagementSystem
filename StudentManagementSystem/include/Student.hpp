@@ -8,17 +8,35 @@
 
 using namespace std;
 
-class Student {
+class Student
+{
 
 private:
     int id;
     string name;
-    string gender; 
+    string gender;
     float average;
 
 public:
+string getGrade() const
+    {
+        if (average >= 90)
+            return "A";
+        else if (average >= 80)
+            return "B";
+        else if (average >= 70)
+            return "C";
+        else if (average >= 60)
+            return "D";
+        else if (average >= 50)
+            return "E";
+        else
+            return "F";
+    }
+
     // OOP constructor
-    Student(int id, string name, string gender, float average) {
+    Student(int id, string name, string gender, float average)
+    {
         this->id = id;
         this->name = name;
         this->gender = gender;
@@ -26,33 +44,39 @@ public:
     }
 
     // OOP getter and setter
-    int getId() const {
+    int getId() const
+    {
         return id;
     }
 
-    string getName() const { 
+    string getName() const
+    {
         return name;
     }
 
-    string getGender() const { 
+    string getGender() const
+    {
         return gender;
     }
 
-    float getAverage() const { 
+    float getAverage() const
+    {
         return average;
     }
 
     // setters
-    void setName(string name) {
+    void setName(string name)
+    {
         this->name = name;
     }
 
-    void setAverage(float average) {
+    void setAverage(float average)
+    {
         this->average = average;
     }
 
-  
-    void displayRow() const {
+    void displayRow() const
+    {
         cout << left << setw(10) << id
              << left << setw(20) << name
              << left << setw(10) << gender
@@ -61,14 +85,14 @@ public:
     }
 };
 
-
-void addStudent(vector<Student>& students);
-void searchStudent(const vector<Student>& list);
-void sortStudents(vector<Student>& list);
-void deleteStudent(vector<Student>& students);
-void displayAll(const vector<Student>& list);
-void displayPagination(const vector<Student>& list);
-void saveToExcel(const vector<Student>& list);
+void addStudent(vector<Student> &students);
+void searchStudent(const vector<Student> &list);
+void sortStudents(vector<Student> &list);
+void deleteStudent(vector<Student> &students);
+void displayAll(const vector<Student> &list);
+void displayPagination(const vector<Student> &list);
+void saveToExcel(const vector<Student> &list);
+void displayStudent(const vector<Student> &students);
+string getGradeColor(const string &grade);
 
 #endif
-

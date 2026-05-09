@@ -176,6 +176,7 @@ void displayPagination(const vector<Student> &list)
             else
                 cout << "\033[33m[!] You are already on the last page!\033[0m\n";
             break;
+
         case 'p':
             if (currentPage > 0)
                 currentPage--;

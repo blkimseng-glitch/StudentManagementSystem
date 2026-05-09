@@ -4,7 +4,7 @@
 
 using namespace std;
 
-UserRole UserManager::login()
+UserRole UserManager::login() // static method for user login
 {
     string username, password;
     UserRole currentRole = UserRole::None;
@@ -16,32 +16,24 @@ UserRole UserManager::login()
     cout << "Enter Password: ";
     cin >> password;
 
+    // --- ផ្នែកទី ២: ការត្រួតពិនិត្យ Username និង Password ---
+
     if (username == "admin" && password == "123")
     {
         currentRole = UserRole::Admin;
     }
-    else if (username != "admin" && password != "123")
-    {
-        currentRole = UserRole::None;
-        cout << "Incorrect username or password!  Please try again." << endl;
-    }
-    if (username == "teacher" && password == "123")
+    else if (username == "teacher" && password == "123")
     {
         currentRole = UserRole::Teacher;
     }
-    else if (username != "teacher" && password != "123")
-    {
-        currentRole = UserRole::None;
-        cout << "Incorrect username or password!  Please try again." << endl;
-    }
-    if (username == "Student" && password == "123")
+    else if (username == "Student" && password == "123")
     {
         currentRole = UserRole::Student;
     }
-    else if (username != "Student" && password != "123")
+    else
     {
+        cout << "Incorrect username or password!" << endl;
         currentRole = UserRole::None;
-        cout << "Incorrect username or password!  Please try again." << endl;
     }
 
     return currentRole;

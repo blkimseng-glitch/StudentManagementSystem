@@ -30,7 +30,7 @@ void showUltraHackerIntro()
     HANDLE h = GetStdHandle(STD_OUTPUT_HANDLE);
     srand(time(0));
 
-    // ១. ស្ទីលផ្ទុះលេខ Binary (Explosion Effect)
+   
     for (int r = 0; r < 20; r++)
     {
         SetConsoleTextAttribute(h, 10); // ពណ៌បៃតង
@@ -48,15 +48,15 @@ void showUltraHackerIntro()
         Sleep(40);
     }
 
-    // ២. ស្ទីល Scan រកឈ្មោះកម្មវិធី (Decryption Effect)
+  
     string title = "STUDENT MANAGEMENT SYSTEM";
-    string dev = "DEVELOPED BY: KIMSENG (GROUP 1)";
+    string dev = "DEVELOPED BY:  (GROUP 1)";
     string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%^&*";
 
     gotoxy(25, 12);
     for (int i = 0; i < title.length(); i++)
     {
-        // បង្ហាញអក្សររត់លឿនៗមុននឹងឈប់លើអក្សរពិត
+     
         for (int j = 0; j < 5; j++)
         {
             gotoxy(25 + i, 12);
@@ -69,7 +69,7 @@ void showUltraHackerIntro()
         cout << title[i];
     }
 
-    // ៣. បង្ហាញឈ្មោះអ្នកអភិវឌ្ឍន៍ជាមួយរបារផ្ទុក (Progress Bar)
+   
     gotoxy(23, 14);
     SetConsoleTextAttribute(h, 14); // ពណ៌លឿង
     cout << dev;
@@ -173,7 +173,7 @@ int main()
                 continue;
             }
 
-            // --- SWITCH CASES (ទុកដូចមុន) ---
+            // --- SWITCH CASES ---
             switch (choice)
             {
             case 1:

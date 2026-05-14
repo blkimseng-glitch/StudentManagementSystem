@@ -154,3 +154,83 @@ void displayPagination(const vector<Student> &list)
     }
 }
 
+
+
+
+void displayPagination(const vector<Student> &list)
+{
+    if (list.empty())
+    {
+        cout << "\033[31m" << "\n[!] No students found." << "\033[0m" << endl;
+        return;
+    }
+
+    const string RESET = "\033[0m";
+    const string BOLD = "\033[1m";
+    const string HEAD_COLOR = "\033[1;33m";
+    const string LINE_COLOR = "\033[34m";
+
+    string border = "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━";
+
+    int pageSize = 5;
+    int totalStudents = list.size();
+    int totalPages = (totalStudents + pageSize - 1) / pageSize;
+    int currentPage = 0;
+
+    while (true)
+    {
+        system("cls");
+
+        cout << "\n"
+             << LINE_COLOR << border << endl;
+        printf("%s", HEAD_COLOR.c_str());
+        printf("  %-8s %-20s %-12s %-12s %-8s\n", "ID", "NAME", "GENDER", "AVERAGE", "GRADE");
+        printf("%s", RESET.c_str());
+        cout << LINE_COLOR << border << RESET << endl;
+
+        int start = currentPage * pageSize;
+        int end = min(start + pageSize, totalStudents);
+
+        for (int i = start; i < end; ++i)
+        {
+            const Student &s = list[i];
+            string grade = s.getGrade();
+            string gColor = getGradeColor(grade);
+
+            printf("  %-8s %-20s %-12s %-12.2f %s%-8s%s\n",
+                   to_string(s.getId()).c_str(),
+                   s.getName().c_str(),
+                   s.getGender().c_str(),
+                   s.getAverage(),
+                   gColor.c_str(), grade.c_str(), RESET.c_str());
+        }
+
+        cout << LINE_COLOR << border << RESET << endl;
+        cout << "Total Students: " << BOLD << totalStudents << RESET
+             << "  |  Page " << BOLD << (currentPage + 1) << RESET
+             << " of " << BOLD << totalPages << RESET << "\n\n";
+
+        cout << "[N] Next  |  [P] Previous  |  [Q] Quit: ";
+        char choice;
+        cin >> choice;
+
+        switch (tolower(choice))
+        {
+        case 'n':
+            if (currentPage < totalPages - 1)
+                currentPage++;
+            else
+                cout << "\033[33m[!] You are already on the last page!\033[0m\n";
+            break;
+
+        case 'p':
+            if (currentPage > 0)
+                currentPage--;
+            else
+                cout << "\033[33m[!] You are already on the first page!\033[0m\n";
+            break;
+        case 'q':
+            return;
+        }
+    }
+}

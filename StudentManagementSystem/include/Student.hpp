@@ -89,6 +89,7 @@ void addStudent(vector<Student> &students);
 void searchStudent(const vector<Student> &list);
 void sortStudents(vector<Student> &list);
 void deleteStudent(vector<Student> &students);
+void updateStudent(vector<Student> &students);
 void displayAll(const vector<Student> &list);
 void displayPagination(const vector<Student> &list);
 void saveToExcel(const vector<Student> &list);

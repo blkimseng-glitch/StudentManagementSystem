@@ -89,3 +89,36 @@ void deleteStudent(vector<Student> &list)
              << endl;
     }
 }
+
+
+void updateStudent(vector<Student> &students){
+    int id;
+    cout << "\n[~] Enter student ID to update: ";
+    cin >> id;
+
+    auto it = find_if(students.begin(), students.end(), [id](const Student &student)
+                      { return student.getId() == id; });
+
+    if (it != students.end())
+    {
+        string newName;
+        float newAverage;
+
+        cout << "Enter new name for student (current: " << it->getName() << "): ";
+        cin.ignore();
+        getline(cin, newName);
+
+        cout << "Enter new average for student (current: " << it->getAverage() << "): ";
+        cin >> newAverage;
+
+        it->setName(newName);
+        it->setAverage(newAverage);
+
+        cout << "Student updated successfully!" << endl;
+    }
+    else
+    {
+        cout << "Student not found!\n"
+             << endl;
+    }
+}

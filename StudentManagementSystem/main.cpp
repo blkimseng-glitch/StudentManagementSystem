@@ -30,7 +30,6 @@ void showUltraHackerIntro()
     HANDLE h = GetStdHandle(STD_OUTPUT_HANDLE);
     srand(time(0));
 
-   
     for (int r = 0; r < 20; r++)
     {
         SetConsoleTextAttribute(h, 10); // ពណ៌បៃតង
@@ -48,7 +47,6 @@ void showUltraHackerIntro()
         Sleep(40);
     }
 
-  
     string title = "STUDENT MANAGEMENT SYSTEM";
     string dev = "DEVELOPED BY:  (GROUP 1)";
     string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%^&*";
@@ -56,7 +54,7 @@ void showUltraHackerIntro()
     gotoxy(25, 12);
     for (int i = 0; i < title.length(); i++)
     {
-     
+
         for (int j = 0; j < 5; j++)
         {
             gotoxy(25 + i, 12);
@@ -69,7 +67,6 @@ void showUltraHackerIntro()
         cout << title[i];
     }
 
-   
     gotoxy(23, 14);
     SetConsoleTextAttribute(h, 14); // ពណ៌លឿង
     cout << dev;
@@ -195,13 +192,18 @@ int main()
                 break;
             case 6:
                 if (currentRole == UserRole::Admin)
-                    saveToExcel(students);
+                    updateStudent(students);
                 break;
             case 7:
+                if (currentRole == UserRole::Admin)
+                    saveToExcel(students);
+                break;
+
+            case 8:
                 cout << "\nLogging out...";
                 Sleep(1000);
                 break;
-            case 8:
+            case 9:
                 systemRunning = false;
                 choice = 7;
                 break;

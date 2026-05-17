@@ -154,12 +154,14 @@ int main()
                 cout << MAGENTA << "  ──────────────── ADMIN MENU ──────────────────" << RESET << endl;
                 cout << "  " << MAGENTA << BOLD << "4." << RESET << " Add New Student" << endl;
                 cout << "  " << MAGENTA << BOLD << "5." << RESET << " Delete Student" << endl;
-                cout << "  " << MAGENTA << BOLD << "6." << RESET << " Save Data to Excel" << endl;
+                cout << "  " << MAGENTA << BOLD << "6." << RESET << " Update Student" << endl;
+                cout << "  " << MAGENTA << BOLD << "7." << RESET << " Save Data to Excel" << endl;
+
             }
 
             cout << YELLOW << "  ──────────────────────────────────────────────" << RESET << endl;
-            cout << "  " << CYAN << BOLD << "7." << RESET << " Logout" << endl;
-            cout << "  " << RED << BOLD << "8." << RESET << " Exit System" << endl;
+            cout << "  " << CYAN << BOLD << "8." << RESET << " Logout" << endl;
+            cout << "  " << RED << BOLD << "9." << RESET << " Exit System" << endl;
             cout << YELLOW << "  ──────────────────────────────────────────────" << RESET << endl;
 
             cout << BOLD << "  Select Option > " << RESET;
@@ -200,27 +202,31 @@ int main()
                 break;
 
             case 8:
+                system("cls");
                 cout << "\nLogging out...";
                 Sleep(1000);
                 break;
             case 9:
                 systemRunning = false;
-                choice = 7;
+                choice = 8;
                 break;
             default:
                 cout << RED << "Invalid option!" << RESET;
                 break;
             }
 
-            if (choice != 7)
+       
+            if (choice != 8)
             {
                 cout << "\n\n"
                      << WHITE << "Press Enter to return to menu...";
                 cin.ignore(1000, '\n');
                 cin.get();
+
+                system("cls"); 
             }
 
-        } while (choice != 7);
+        } while (choice != 8);
     }
     return 0;
 }
